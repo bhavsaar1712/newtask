@@ -1,0 +1,32 @@
+<section>
+  <div class="container-fluid">
+      <div class="container">
+          <div class="">
+              <form  [formGroup]="RegisterForm" (submit)="OnSubmit(RegisterForm)" class="row   justify-content-center" >
+                  <div  class="border align-content-center col-5 p-5">
+                    <div class="row py-2 ">
+                      <div class="h2 text-center">
+                          useruploder
+                      </div>
+                    </div>
+                    <div class="row py-2">
+                      <input class="form-control" id="name" formControlName="Name" type="text" placeholder=" Name..." aria-label="default input example">
+                    </div> 
+                    <div class="row py-2">
+                        <input class="form-control" id="Email" formControlName="Email" type="mail" placeholder=" Email..." aria-label="default input example">
+                      </div> 
+                  <div class="row py-2">
+                    <input class="form-control" type="file" (change)="onSelectNewFile($event)" formControlName="image" placeholder="Total Prize..." aria-label="default input example">
+
+                </div>
+                  <div class="row py-2">
+
+                      <button class="btn btn-primary" type="submit">{{buttonMode}}</button>
+                  </div>
+              </div>
+          </form>
+
+          </div>
+      </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<section>
+  <div class="container-fluid mt-5">
+      <div class="container">
+          <div >
+              <form class="row   justify-content-center"  [formGroup]="LoginForm" (submit)="OnSubmit()">
+                  <div  class="border align-content-center col-5 p-5">
+                      <div class="row py-2 ">
+                          <div class="h2 text-center">
+                              LogIn
+                          </div>
+                      </div>
+                      <div class="row py-2">
+                          <input class="form-control" formControlName="Username" type="number" type="email" placeholder="Mail Id..." aria-label="default input example">
+
+                      </div>
+                      <div class="row py-2">
+                          <input class="form-control" formControlName="password" type="password" placeholder="password..." aria-label="default input example">
+
+                      </div>
+
+                      <div class="row py-2">
+
+                          <button class="btn btn-primary" type="submit">Sign Up</button>
+                      </div>
+                  </div>
+              </form>
+
+          </div>
+      </div>
+  </div>
+</section>
