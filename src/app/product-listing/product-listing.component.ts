@@ -43,6 +43,10 @@ export class ProductListingComponent implements OnInit {
     this.product.ListData(ApiManager.LISTING_API,{}).subscribe(data => {
       this.ProductListArray=data;
       this.ProductListArray0=this.ProductListArray.payload.data;
+      this.ProductListArray0.forEach((element:any) => {
+        element.image='../../assets/image/'+element.image;
+      });
+      console.log(this.ProductListArray0);
     })
   }
 }
